@@ -13,13 +13,13 @@ import streamlit as st
 import pickle
 
 # loading the saved PorterStemmer
-ps = pickle.load(open('R:/LEARN CODING/Projects/Machine Learning/IBM Internship/ps.pkl','rb'))
+ps = pickle.load(open('ps.pkl','rb'))
 
 # loading the saved CountVectorizer
-cv = pickle.load(open('R:/LEARN CODING/Projects/Machine Learning/IBM Internship/cv.pkl','rb'))
+cv = pickle.load(open('cv.pkl','rb'))
 
 # loading the saved Model
-model = pickle.load(open('R:/LEARN CODING/Projects/Machine Learning/IBM Internship/model.pkl','rb'))
+model = pickle.load(open('model.pkl','rb'))
 
 # Function for preprocessing and sentiment prediction
 def predict_sentiment(sample_review):
